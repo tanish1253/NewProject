@@ -10,8 +10,13 @@ function yesClicked() {
     const noBtn = document.getElementById("noBtn");
     const sound = document.getElementById("boingSound");
   
-    const maxWidth = window.innerWidth - noBtn.clientWidth;
-    const maxHeight = window.innerHeight - noBtn.clientHeight;
+    const container = document.querySelector(".btn-container");
+
+  const containerRect = container.getBoundingClientRect();
+  const maxWidth = container.clientWidth - noBtn.offsetWidth;
+  const maxHeight = container.clientHeight - noBtn.offsetHeight;
+
+    noBtn.style.position = "absolute";
     const x = Math.random() * maxWidth;
     const y = Math.random() * maxHeight;
   
