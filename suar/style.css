@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-top: 50px;
+    background-color: #ffc0cb;
+    overflow: hidden;
+  }
+  
+  .btn-container {
+    position: relative;
+    height: 200px;
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  #yesBtn {
+    left: 40%;
+  }
+  
+  #noBtn {
+    left: 50%;
+  }
+  
+  #resultImage {
+    display: none;
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    70% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 0.5s;
+  }
+  

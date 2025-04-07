@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funny Button</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 id="question">Kya Khushi Kala Suar hai&#128055;</h2>
+
+    <div class="btn-container" id="buttons">
+      <button id="yesBtn" onclick="yesClicked()">Yes ✅</button>
+      <button id="noBtn" onmouseover="moveNoButton()">No ❌</button>
+    </div>
+
+    <p id="result" style="display: none"></p>
+    <img
+      id="resultImage"
+      src="assets/img.jpg"
+      alt="Funny Image"
+    />
+
+    <audio
+      id="boingSound"
+      src="assets/sound.mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
