@@ -8,7 +8,8 @@ body {
   
   .btn-container {
     position: relative;
-    height: 200px;
+      width: 100%;
+    height: 300px;
   }
   
   button {
