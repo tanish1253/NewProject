@@ -152,6 +152,7 @@
             function buyNow(name) {
                 const phoneNumber = "919797241253";
                 const message = `I would like to buy ${name}.`;
+                const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
                 window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
             }
      </script>
